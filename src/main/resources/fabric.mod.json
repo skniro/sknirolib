@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "skniro",
+  "version": "${version}",
+  "name": "SkniroLib",
+  "description": "",
+  "authors": [
+    "skniro"
+  ],
+  "contact": {
+    "website": "",
+    "sources": "",
+    "issues": ""},
+  "license": "MIT",
+  "icon": "assets/agree/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+    ],
+    "client": [
+      "com.skniro.agree.client.LibClient"
+    ],
+    "main": [
+      "com.skniro.agree.SkniroLib"
+    ]
+  },
+  "mixins": [
+    "sknirolib.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric": "*",
+    "minecraft": "1.20.x"
+  }
+}
